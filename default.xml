@@ -35,7 +35,7 @@
   </project>
   <project name="platform_frameworks_base" path="frameworks/base" groups="pdk-cw-fs" remote="tos" />
   <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="tos" />
-  <project name="platform_vendor_aosp" path="vendor/aosp" remote="tos" />
+  <project name="platform_vendor_toxic" path="vendor/aosp" remote="tos" />
   <project name="manifest" path="manifest" remote="tos" />
   
 <!-- Aosp RRO -->
