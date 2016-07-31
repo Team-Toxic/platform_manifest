@@ -3,7 +3,7 @@ Team Toxic 6.0 Beta (AOSP)+RRO
 
 To initialize your local repository using the Toxic 6.0 trees, use a command like this:
 ````bash
-repo init -u git://github.com/Team-Toxic/platfrom_manifest.git -b mm
+repo init -u git://github.com/Team-Toxic/platform_manifest.git -b mm
 ```
 Then to sync up:
 ````bash
