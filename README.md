@@ -1,7 +1,7 @@
 Team Toxic 6.0 Beta (AOSP)+RRO
 ===========
 
-To initialize your local repository using the AOSP-RRO trees, use a command like this:
+To initialize your local repository using the Toxic 6.0 trees, use a command like this:
 ````bash
 repo init -u git://github.com/Team-Toxic/platfrom_manifest.git -b mm
 ```
@@ -13,9 +13,15 @@ Finally to build:
 ````bash
 ./build.sh device_codename
 ```
-Example:
+Developers:
 ````bash
-./build.sh falcon
-./build.sh titan
+Aditya Upreti
+Sagar Shah
 ```
-
+Thanks to:
+````bash
+AOSP+RRO Team
+Cyanogenmod
+Slim roms
+teamasek
+```
