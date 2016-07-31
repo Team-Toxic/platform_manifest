@@ -15,6 +15,10 @@
            fetch="https://github.com/Team-Toxic"
 	   revision="mm" />
 
+  <remote  name="rro"
+           fetch="https://github.com/AOSP-RRO"
+	   revision="marshmallow" />
+
   <default revision="refs/tags/android-6.0.1_r52"
            remote="aosp"
            sync-j="8"
@@ -25,15 +29,35 @@
  
 <!-- Team Toxic-->
 
-  <project name="platform_art" path="art" groups="pdk" remote="rro" />
-  <project name="platform_build" path="build" groups="pdk,tradefed" remote="rro" >
+  <project name="platform_build" path="build" groups="pdk,tradefed" remote="tos" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <copyfile src="build.sh" dest="build.sh" />
   </project>
-  <project name="platform_bootable_recovery" path="bootable/recovery" remote="rro" />
-  <project name="platform_external_sepolicy" path="external/sepolicy" groups="pdk" remote="rro" />
-  <project name="platform_external_dhcpcd" path="external/dhcpcd" remote="rro" />
-  <project name="platform_frameworks_base" path="frameworks/base" groups="pdk-cw-fs" remote="rro" />
+  <project name="platform_frameworks_base" path="frameworks/base" groups="pdk-cw-fs" remote="tos" />
+  <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="tos" />
+  <project name="platform_vendor_aosp" path="vendor/aosp" remote="tos" />
+  <project name="manifest" path="manifest" remote="tos" />
+  
+<!-- Aosp RRO -->
+  <project name="platform_art" path="art" groups="pdk" remote="rro" />
+  <project name="platform_packages_apps_Snap" path="packages/apps/Snap" groups="pdk" remote="rro" />
+  <project name="platform_packages_apps_Stk" path="packages/apps/Stk" remote="rro" />
+  <project name="platform_packages_apps_Terminal" path="packages/apps/Terminal" remote="rro" />
+  <project name="platform_packages_apps_UnifiedEmail" path="packages/apps/UnifiedEmail" remote="rro" />
+  <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="rro" />
+  <project name="platform_packages_providers_ContactsProvider" path="packages/providers/ContactsProvider" groups="pdk-cw-fs" remote="rro" />
+  <project name="platform_packages_providers_DownloadProvider" path="packages/providers/DownloadProvider" remote="rro" />
+  <project name="platform_packages_providers_TelephonyProvider" path="packages/providers/TelephonyProvider" remote="rro" />
+  <project name="platform_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="rro" />
+  <project name="platform_packages_services_Mms" path="packages/services/Mms" remote="rro" />
+  <project name="platform_packages_services_Telecomm" path="packages/services/Telecomm" remote="rro" />
+  <project name="platform_packages_services_Telephony" path="packages/services/Telephony" remote="rro" />
+  <project name="platform_system_bt" path="system/bt" remote="rro" />
+  <project name="platform_system_core" path="system/core" groups="pdk" remote="rro" />
+  <project name="platform_system_extras" path="system/extras"  groups="pdk" remote="rro" />
+  <project name="platform_system_keymaster" path="system/keymaster" remote="rro" />
+  <project name="platform_system_security" path="system/security" remote="rro" />
+  <project name="platform_system_vold" path="system/vold" groups="pdk" remote="rro" />
   <project name="platform_frameworks_av" path="frameworks/av" groups="pdk" remote="rro" />
   <project name="platform_frameworks_native" path="frameworks/native" groups="pdk" remote="rro" />
   <project name="platform_frameworks_opt_net_ims" path="frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs" remote="rro" />
@@ -58,27 +82,9 @@
   <project name="platform_packages_apps_Nfc" path="packages/apps/Nfc" remote="rro" />
   <project name="platform_packages_apps_OTA" path="packages/apps/OTA" remote="rro" />
   <project name="platform_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" remote="rro" />
-  <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="rro" />
-  <project name="platform_packages_apps_Snap" path="packages/apps/Snap" groups="pdk" remote="rro" />
-  <project name="platform_packages_apps_Stk" path="packages/apps/Stk" remote="rro" />
-  <project name="platform_packages_apps_Terminal" path="packages/apps/Terminal" remote="rro" />
-  <project name="platform_packages_apps_UnifiedEmail" path="packages/apps/UnifiedEmail" remote="rro" />
-  <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="rro" />
-  <project name="platform_packages_providers_ContactsProvider" path="packages/providers/ContactsProvider" groups="pdk-cw-fs" remote="rro" />
-  <project name="platform_packages_providers_DownloadProvider" path="packages/providers/DownloadProvider" remote="rro" />
-  <project name="platform_packages_providers_TelephonyProvider" path="packages/providers/TelephonyProvider" remote="rro" />
-  <project name="platform_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="rro" />
-  <project name="platform_packages_services_Mms" path="packages/services/Mms" remote="rro" />
-  <project name="platform_packages_services_Telecomm" path="packages/services/Telecomm" remote="rro" />
-  <project name="platform_packages_services_Telephony" path="packages/services/Telephony" remote="rro" />
-  <project name="platform_system_bt" path="system/bt" remote="rro" />
-  <project name="platform_system_core" path="system/core" groups="pdk" remote="rro" />
-  <project name="platform_system_extras" path="system/extras"  groups="pdk" remote="rro" />
-  <project name="platform_system_keymaster" path="system/keymaster" remote="rro" />
-  <project name="platform_system_security" path="system/security" remote="rro" />
-  <project name="platform_system_vold" path="system/vold" groups="pdk" remote="rro" />
-  <project name="platform_vendor_aosp" path="vendor/aosp" remote="rro" />
-  <project name="manifest" path="manifest" remote="rro" />
+  <project name="platform_bootable_recovery" path="bootable/recovery" remote="rro" />
+  <project name="platform_external_sepolicy" path="external/sepolicy" groups="pdk" remote="rro" />
+  <project name="platform_external_dhcpcd" path="external/dhcpcd" remote="rro" />
   
 <!-- CyanogenMod -->
   <project name="CyanogenMod/android_bionic" path="bionic" groups="pdk" remote="github" revision="cm-13.0" />
