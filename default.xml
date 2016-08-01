@@ -11,9 +11,9 @@
            fetch="https://github.com/SlimRoms"
            revision="mm6.0" />
 
-  <remote  name="rro"
-           fetch="https://github.com/AOSP-RRO"
-	   revision="marshmallow" />
+  <remote  name="tos"
+           fetch="https://github.com/Team-Toxic"
+	   revision="mm" />
 
   <default revision="refs/tags/android-6.0.1_r52"
            remote="aosp"
@@ -23,7 +23,7 @@
            sync-q="true" />
 
  
-<!-- AOSP-RRO -->
+<!-- Team Toxic-->
 
   <project name="platform_art" path="art" groups="pdk" remote="rro" />
   <project name="platform_build" path="build" groups="pdk,tradefed" remote="rro" >

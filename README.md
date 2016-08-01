@@ -1,9 +1,9 @@
-AOSP+RRO MarshMallow
+Team Toxic 6.0 Beta (AOSP)+RRO
 ===========
 
 To initialize your local repository using the AOSP-RRO trees, use a command like this:
 ````bash
-repo init -u git://github.com/AOSP-RRO/manifest.git -b marshmallow
+repo init -u git://github.com/Team-Toxic/platfrom_manifest.git -b mm
 ```
 Then to sync up:
 ````bash
@@ -19,4 +19,3 @@ Example:
 ./build.sh titan
 ```
 
-Device specific local manifest's are in this repo in the format <codename>.xml
