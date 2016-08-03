@@ -38,8 +38,8 @@
   <project name="android_vendor_toxic" path="vendor/aosp" remote="tos" />
   <project name="platform_manifest" path="manifest" remote="tos" />
   <project name="android_packages_apps_OTA" path="packages/apps/OTA" remote="tos" />
-  <project name="platform_frameworks_native" path="frameworks/native" groups="pdk" remote="tos" />
-  <project name="platform_system_core" path="system/core" groups="pdk" remote="tos" />
+  <project name="android_frameworks_native" path="frameworks/native" groups="pdk" remote="tos" />
+  <project name="android_system_core" path="system/core" groups="pdk" remote="tos" />
   
 <!-- Aosp RRO -->
   <project name="platform_art" path="art" groups="pdk" remote="rro" />
