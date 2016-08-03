@@ -38,6 +38,8 @@
   <project name="android_vendor_toxic" path="vendor/aosp" remote="tos" />
   <project name="platform_manifest" path="manifest" remote="tos" />
   <project name="android_packages_apps_OTA" path="packages/apps/OTA" remote="tos" />
+  <project name="platform_frameworks_native" path="frameworks/native" groups="pdk" remote="tos" />
+  <project name="platform_system_core" path="system/core" groups="pdk" remote="tos" />
   
 <!-- Aosp RRO -->
   <project name="platform_art" path="art" groups="pdk" remote="rro" />
@@ -54,13 +56,11 @@
   <project name="platform_packages_services_Telecomm" path="packages/services/Telecomm" remote="rro" />
   <project name="platform_packages_services_Telephony" path="packages/services/Telephony" remote="rro" />
   <project name="platform_system_bt" path="system/bt" remote="rro" />
-  <project name="platform_system_core" path="system/core" groups="pdk" remote="rro" />
   <project name="platform_system_extras" path="system/extras"  groups="pdk" remote="rro" />
   <project name="platform_system_keymaster" path="system/keymaster" remote="rro" />
   <project name="platform_system_security" path="system/security" remote="rro" />
   <project name="platform_system_vold" path="system/vold" groups="pdk" remote="rro" />
   <project name="platform_frameworks_av" path="frameworks/av" groups="pdk" remote="rro" />
-  <project name="platform_frameworks_native" path="frameworks/native" groups="pdk" remote="rro" />
   <project name="platform_frameworks_opt_net_ims" path="frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs" remote="rro" />
   <project name="platform_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="rro" groups="pdk" />
   <project name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony" groups="pdk" remote="rro" />
