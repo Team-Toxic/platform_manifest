@@ -1,4 +1,4 @@
-Team Toxic 6.0 Beta (AOSP)+RRO
+Team Toxic 6.0 Beta (AOSP)+OMS Substratum !
 ===========
 
 To initialize your local repository using the Toxic 6.0 trees, use a command like this:
