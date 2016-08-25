@@ -1,9 +1,9 @@
-Team Toxic 6.0 Beta (AOSP)+OMS Substratum !
+Team Toxic 7.0 Nougat WIP (AOSP)!
 ===========
 
-To initialize your local repository using the Toxic 6.0 trees, use a command like this:
+To initialize your local repository using the Toxic 7.0 trees, use a command like this:
 ````bash
-repo init -u git://github.com/Team-Toxic/platform_manifest.git -b mm
+repo init -u git://github.com/Team-Toxic/platform_manifest.git -b android-7.0
 ```
 Then to sync up:
 ````bash
@@ -11,7 +11,7 @@ repo sync
 ```
 Finally to build:
 ````bash
-./build.sh device_codename
+Dont build now 
 ```
 Developers:
 ````bash
