@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+   <remote  name="slim"		
+            fetch="https://github.com/SlimRoms"		
+            revision="mm6.0" />		
+ 		
+   <remote  name="tos"		
+            fetch="https://github.com/Team-Toxic"		
+ 	          revision="mm" />		
+  		  
+   <remote name="rro"		 
+           fetch="https://github.com/AOSP-RRO"		            
+           revision="marshmallow" />
+ 	   
   <remote  name="aosp"
            fetch="https://android.googlesource.com" />
   <default revision="refs/tags/android-7.0.0_r1"
